@@ -2,13 +2,12 @@
 
 **WaAAp-Security-Check** é um sistema de verificação de IP em PHP que consulta a API oficial do [WaAAp](https://www.waaap.net) para identificar acessos suspeitos, como uso de **VPN, Proxy, Tor, Bots e conexões comprometidas**.  
 
-Este pacote ajuda desenvolvedores a reforçarem a **segurança de sites e sistemas** de forma simples e prática.
+Um sistema de **verificação de IP com Machine Learning (ML)** desenvolvido em PHP.  
+O objetivo é identificar acessos suspeitos (VPNs, proxies, IPs comprometidos e tráfego automatizado) utilizando tanto **dataset local** quanto análise com ML.
 
----
-
-## 🚀 Recursos
-- Detecção de **Proxy, VPN, Tor e Bots**
-- Informações detalhadas do dispositivo (navegador, OS, versão)
-- Verificação em **tempo real via API**
-- Score de risco do IP
-- Fácil integração em qualquer projeto PHP
+## Recursos
+- 🚀 Verificação rápida de IP
+- 🧠 Detecção com Machine Learning
+- 🌍 Dataset local para consultas offline
+- 🔒 Indicação de IPs suspeitos (VPN, Proxy, Scraper, Comprometido, etc.)
+- 📊 Log de verificações para auditoria
