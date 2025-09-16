@@ -4,7 +4,7 @@ declare(strict_types=1);
 /**
  * WaAAp-Security-Check/1.0 - Sistema de Verificação de IP
  * 
- * @package    IP Security Suite
+ * @package    WaAAp-Security-Check/1.0
  * @author     Francisco junior
  * @version    1.0.0
  * @license    MIT License
@@ -373,4 +373,5 @@ $isSuspicious = IPSecurityChecker::$detection_risk > 7 ||
 
 if ($isSuspicious) {
     echo "🔒 Acesso suspeito detectado - Reforçar verificação\n";
+
 }
