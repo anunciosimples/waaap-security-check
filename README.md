@@ -21,3 +21,31 @@ tráfego suspeito ou automatizado.
 1. Clone o repositório:
    ```bash
    git clone https://github.com/seu-usuario/waaap-security-check.git
+Como funciona:
+
+✅ Captura automaticamente o IP e User Agent do usuário
+
+✅ Consulta a API para verificar a qualidade do tráfego
+
+✅ Exibe todos os dados retornados pela API
+
+✅ Bloqueia apenas se "traffic_quality": "low"
+
+✅ Permite acesso se "traffic_quality": "high" ou qualquer outro valor
+
+✅ Não considera os risk_factors para bloqueio, apenas exibe
+
+Para usar:
+
+php
+// Coloque no início do seu script PHP
+require_once 'TrafficSecurityManager.php';
+$security = new TrafficSecurityManager();
+$security->processSecurityCheck(); // Bloqueia automaticamente se quality = low
+Resultado esperado:
+
+Se traffic_quality = "low" → BLOQUEADO
+
+Se traffic_quality = "high" ou "medium" → PERMITIDO
+
+Se API falhar → PERMITIDO (fallback)
