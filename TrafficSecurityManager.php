@@ -3,8 +3,8 @@
 /**
  * Traffic Quality Security Manager
  * 
- * @package TrafficSecurity
- * @author SeuNome
+ * @package WaAAp security
+ * @author Francisco junior
  * @version 1.0
  * @license MIT
  */
@@ -274,5 +274,6 @@ try {
     error_log("Erro no TrafficSecurityManager: " . $e->getMessage());
     echo "Erro no sistema de segurança. Contate o administrador.\n";
 }
+
 
 ?>
